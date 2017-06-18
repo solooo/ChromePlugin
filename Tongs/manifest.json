@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "信息抓取",
+  "version": "0.1",
+  "description": "信息抓取",
+  "browser_action": {
+    "default_popup": "html/popup.html"
+  },
+  "background": {
+    "scripts": []
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.google.com/*"
+      ],
+      "js": [
+        "js/status.js"
+      ]
+    }
+  ]
+}
