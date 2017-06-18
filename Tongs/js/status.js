@@ -1,1 +1,3 @@
-console.log(document.getElementById("hplogo").src);
+$(document).ready(function() {
+	alert("load jquery over");
+})
